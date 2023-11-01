@@ -1,23 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="hero py-5">
-        <div class="p-5 mb-4 bg-light rounded-3">
-            <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold">Home <i class="fa fa-pagelines" aria-hidden="true"></i></h1>
-                <p class="col-md-8 fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ea officia ab laudantium
-                    at
-                    tenetur saepe vitae quidem nesciunt earum quas quibusdam quo quos, reprehenderit cumque. Consequatur
-                    minus
-                    saepe modi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero fuga, officiis, voluptatem,
-                    quasi
-                    doloribus dolorum illum nisi ab quidem quam quia praesentium. Qui aspernatur velit illo atque ipsam
-                    architecto itaque?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore obcaecati temporibus
-                    assumenda ratione ipsum illum quidem aperiam. Voluptatem, illo. Ipsam molestiae eveniet accusantium
-                    mollitia
-                    ullam hic quis neque itaque quibusdam!</p>
-                <a href="{{ route('comics') }}" class="btn btn-primary btn-lg" type="button">See our collection!</a>
-            </div>
+    <div>
+        <div class="container m-4">
+             <h1>Home</h1>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur molestias perferendis, eligendi atque enim corporis perspiciatis. Quos voluptatem odio consequuntur aspernatur numquam, similique aliquam deleniti nihil veritatis doloremque temporibus deserunt omnis consequatur voluptas consectetur labore earum id eaque, dolorum ea molestias quis provident facere illo. Eaque modi provident mollitia asperiores quibusdam in pariatur corrupti obcaecati veniam quas, quia voluptates corporis iure magnam incidunt laborum doloremque maxime, labore beatae inventore fugit. Placeat minus similique dolorum incidunt, animi mollitia excepturi illum doloribus expedita dignissimos, adipisci quo voluptatum commodi vitae eveniet neque quos deserunt aliquid. Eligendi accusamus sint adipisci reiciendis totam vitae corporis.</p>
+            <a href="{{ route('comics') }}" class="btn btn-primary btn-lg" type="button">See our Comics</a>
         </div>
+    </div>
+    </div>
+    </div>
     </div>
 @endsection
