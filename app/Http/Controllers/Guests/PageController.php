@@ -8,5 +8,18 @@ use App\Models\Comic;
 
 class PageController extends Controller
 {
-    //
+    public function index()
+    {
+        return view('home');
+    }
+
+    public function comics()
+    {
+        return view('comics', ['comics' => Comic::all()]);
+    }
+
+    public function about()
+    {
+        return view('about');
+    }
 }
