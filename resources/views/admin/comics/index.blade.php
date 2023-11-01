@@ -1,8 +1,8 @@
 @extends('layouts.admin')
 
 @section('content')
-    <div class="container py-3">
-        <h1 class="text-center">Comic List</h1>
+    <div class="container ">
+        <h1 class="text-center py-2">Comics List</h1>
 
         <div class="table-responsive-sm">
             <table class="table table-light align-middle">
@@ -20,7 +20,6 @@
                             <td>{{ $comic->id }}</td>
                             <td>{{ $comic->title }}</td>
                             <td>
-                                {{-- <img height="50px" src="{{ asset('storage/' . $comic->thumb) }}" alt=""> --}}
 
                                 @if (str_contains($comic->thumb, 'http'))
                                     <img height="50px" src="{{ $comic->thumb }}">
@@ -32,7 +31,7 @@
                             </td>
                             <td>
                                 <a class="btn btn-primary" href="{{ route('comics.show', $comic->id) }}">More</a>
-                                <a class="btn btn-warning" href="#">Edit</a>
+                                <a class="btn btn-success" href="#">Edit</a>
                                 <a class="btn btn-danger" href="#">Delete</a>
                             </td>
                         </tr>
