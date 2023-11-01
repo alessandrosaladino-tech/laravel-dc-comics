@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <section id="comics">
-        <div class="container mb-4">
+    <section id="comics" class="bg-primary">
+        <div class="container pb-4">
             <h1 class="text-center  py-4">Comics</h1>
             <div class="row row-cols-1 row-cols-md-4 g-3">
                 @forelse ($comics as $comic)
