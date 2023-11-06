@@ -5,8 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Models\Comic;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreRequest;
-use App\Http\Requests\UpdateRequest;
+use App\Http\Requests\ComicStoreRequest;
+use App\Http\Requests\ComicUpdateRequest;
 use Illuminate\Support\Facades\Storage;
 
 class ComicController extends Controller
@@ -30,7 +30,7 @@ class ComicController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreRequest $request)
+    public function store(ComicStoreRequest $request)
     {
         //dd($request);
         $val_data = $request->validated();
@@ -65,7 +65,7 @@ class ComicController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateRequest $request, Comic $comic)
+    public function update(ComicUpdateRequest $request, Comic $comic)
     {
         $val_data = $request->validated();
 
